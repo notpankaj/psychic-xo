@@ -1,0 +1,124 @@
+.add__marker{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-60%) ;    
+    background-color: #fff;
+    width: 80%;
+    max-width: 300px;
+    z-index: 1000;
+    border-radius: 2px ;
+    box-shadow: 0px 3px 7px 1px #00000070;
+
+}
+.add__marker-head {
+    position: relative;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-bottom: 1px solid #d1cdcd;
+}
+
+.add__marker-head .close-btn{
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    background: rgb(70, 68, 68);
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    padding: 2px;
+    display: grid;
+    place-content: center;
+    transition: transform 0.2s ease-in-out ;
+    color: rgb(235, 232, 232);
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    
+    &:hover {
+        transform: rotate(60deg);
+    }
+}
+
+
+
+
+.add__marker-form {
+    width: 100%;
+    position: relative;
+}
+
+.add__marker-form form  {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.add__marker .input__box {
+    display: flex;
+    flex-direction: column;
+}
+.add__marker .input__box label{
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.add__marker .input__box input{
+    background-color: #eef1f6;
+    color: #050505;
+    padding: 10px;
+    border:none;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+
+    
+    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: rgb(170, 165, 165);
+        opacity: 1; /* Firefox */
+        font-size: 13px;
+      }
+      
+      &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: rgb(170, 165, 165);
+      }
+      
+      &::-ms-input-placeholder { /* Microsoft Edge */
+        color: rgb(170, 165, 165);
+      }
+    
+}
+
+
+//  placeholder
+
+
+.input__box-note {
+    background-color: #ffdddd;
+    display: flex;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 4px solid #f44f4f;
+}
+ 
+.input__box-note p {
+    font-size: 11px;
+    font-weight: 500;
+    color: #555;
+    text-align: left;
+}
+
+.add__marker-form form button {
+    border:none;
+    outline: none;
+    background-color: #050505;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 13px 0;   
+    letter-spacing: 1px; 
+}

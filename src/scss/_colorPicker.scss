@@ -1,0 +1,60 @@
+.color__picker__container{
+    position: absolute;
+    left: 0;
+    top: -60px;
+    display: flex;
+    cursor: pointer;
+  }
+  .color__picker {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 0 5px;
+    border-radius: 30px;
+    align-items: center;
+    height: 30px;
+    background-color:#fff;
+    box-shadow: 1px 2px 3px 0px rgb(163 177 198 / 60%), -1px -2px 3px 0px rgb(255 255 255);
+    
+  }
+  
+  .color__picker > span {
+    padding:0;
+    border-radius: 50%;
+  }
+  
+  .color__picker > span > strong {
+   margin: 0 2px;
+   color: gray;
+   font-size: 1rem;
+   font-weight: 800;
+  }
+  
+  .color__schemes {
+    padding-right: 10px ;
+    padding-left: 8px ;
+    display: flex;
+  }
+  
+  .color__schemes > button {
+    width: 30px;
+    height: 22px;
+    border:none;
+    outline: none;
+    /* transition: all 0.1s ease-out; */
+    cursor: pointer;
+  }
+  
+  .color__schemes > button:hover {
+    transform: scale(1.3);
+  } 
+  
+  .color__schemes > button:first-child{
+      border-top-left-radius: 4px ;
+      border-bottom-left-radius: 4px ;
+  }
+  .color__schemes > button:last-child{
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    margin-right: 5px;
+  }

@@ -1,0 +1,149 @@
+nav {
+    z-index:  10;
+}
+
+nav .drop-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 15px;
+    font-weight: 500;
+    z-index: 10000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color:#e9eaec;
+    box-shadow: 1px 2px 3px 0px rgb(163 177 198 / 60%), -1px -2px 3px 0px rgb(255 255 255);
+}
+nav .drop-btn i {
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.drop-btn.active {
+    // background: #000;
+    // color: #fff;
+    box-shadow: inset  -1px -2px 3px 0px rgb(255 255 255), inset 1px 2px 3px 0px rgb(163 177 198 / 60%);
+}
+nav .wrapper{
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    display: flex;
+    width: 200px;
+    overflow: hidden;
+    // background: #242526;  
+    background: #FFF;  
+    display: none; 
+    z-index: 10;
+    box-shadow:1px 1px 2px 1px rgb(0 0 0 / 17%);
+    border-radius: 3px;
+    z-index: 10000;
+}
+nav .wrapper.show {
+    display: block;
+    display: flex;
+}
+
+nav .wrapper .setting-drop,
+nav .wrapper .help-drop,
+nav .wrapper .theme-drop{
+    display: none;
+}
+
+nav .wrapper ul {
+    list-style: none;
+    width: 200px;
+    padding: 10px;
+    
+    transition: all 0.3s ease;
+}
+nav .wrapper ul li {
+    line-height: 40px;
+}
+nav .wrapper ul li a {
+    position: relative;
+    // color: #b0b3b8;
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    font-size:14px;
+    font-weight: 500;
+    padding: 0 5px ;
+    align-items: center;
+    border-radius: 8px;
+}
+
+nav .wrapper ul li.active a{
+    background: #b0b3b8;
+    color: #555;
+    text-decoration: line-through;
+}
+nav .wrapper ul li:hover a
+{
+    // background: #3A3B3C;
+    background: #353535;
+    color: #FFF;
+}
+
+.wrapper ul li a .icon {
+    height: 28px;
+    width: 28px;
+    margin-right: 10px;
+    background: #ffffff1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.wrapper ul li a i {
+    position: absolute;
+    right: 10px;
+    font-size: 20px;
+    pointer-events: none;
+}
+
+
+.wrapper ul li a i{
+    position: absolute;
+    right: 10px;
+    font-size: 14px;
+    pointer-events: none;
+}
+
+.wrapper ul .arrow{
+    padding-left: 5px;
+    font-size: 16px;
+    // color: #b0b3b8;
+    color: #222;
+    font-weight: 500 ;
+    cursor: pointer;
+}
+.wrapper ul .arrow span {
+    margin-right: 10px;
+}
+
+
+/*###################################
+                HEX
+###################################*/
+body.HEX {
+    .drop-btn.active {
+        // background: #000;
+        background: #474747;
+        color: #fff;
+    }
+    nav .wrapper{
+        background: #242526;  
+    }
+    nav .wrapper ul li a {
+        color: #b0b3b8;
+     }
+    nav .wrapper ul li:hover a {
+        background: #3A3B3C;
+     }
+    .wrapper ul .arrow{
+        color: #b0b3b8;
+     }
+}
