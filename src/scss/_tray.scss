@@ -275,8 +275,11 @@
     align-items: center;
     padding: 20px;
     width: 100%;
+
+
 }
-.bookmark__import  p{
+.bookmark__import  p,
+.bookmark__import  pre{
     font-size: 0.9rem;  
     color: rgb(126, 126, 126); 
     text-align: center

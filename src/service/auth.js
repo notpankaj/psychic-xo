@@ -1,4 +1,3 @@
-import firebase from '../config/firebase-config'
 import { getAuth, signInWithPopup } from "firebase/auth";
 
 

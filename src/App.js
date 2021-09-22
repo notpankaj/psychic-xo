@@ -14,21 +14,21 @@ function App() {
   const [user,setUser] = useState(null);
   const [kernel,setKernel] = useState(null);
   
+  const possibleKernel = JSON.parse(localStorage.getItem('kernel'));
+  const possibleMode = localStorage.getItem('mode');
+  
+  const colorScheme = localStorage.getItem('colorScheme');
+  
   useEffect(()=>{
-    const possibleKernel = JSON.parse(localStorage.getItem('kernel'));
-    const possibleMode = localStorage.getItem('mode');
-
-    const colorScheme = localStorage.getItem('colorScheme');
-
-    if(colorScheme){
-      document.querySelector('body').style.backgroundColor = colorScheme;
+  if(colorScheme){
+    document.querySelector('body').style.backgroundColor = colorScheme;
     }
     
     if(possibleMode === 'HEX'){
       document.body.classList.add('HEX');
       document.body.style.background = '#121212';
     }
-
+    
     if(possibleKernel){
       console.log(" KERNEl FOUND",{kernel})
       setKernel(possibleKernel);

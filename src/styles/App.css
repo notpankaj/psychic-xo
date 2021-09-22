@@ -776,7 +776,8 @@ body.HEX .wrapper ul .arrow {
   width: 100%;
 }
 
-.bookmark__import p {
+.bookmark__import p,
+.bookmark__import pre {
   font-size: 0.9rem;
   color: #7e7e7e;
   text-align: center;

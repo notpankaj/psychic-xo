@@ -6,7 +6,7 @@ function OverviewPage() {
     
             <Link to="/">    
             <div className="gohome__box">
-            <img src={process.env.PUBLIC_URL + '/logo.png'} className="header__logo-img" alt="logo" />
+            <img alt="help" src={process.env.PUBLIC_URL + '/logo.png'} className="header__logo-img" alt="logo" />
             {/* <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style={{ fill: "rgba(0, 0, 0, 1)",transform: '' , msFilter: '' }}><path d="m21.743 12.331-9-10c-.379-.422-1.107-.422-1.486 0l-9 10A1 1 0 0 0 3 14h2v7a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-7h2a.998.998 0 0 0 .743-1.669zM12 16a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"></path></svg> */}
                 <span className="gohome__btn">GO HOME</span>
             </div>
@@ -49,12 +49,12 @@ function OverviewPage() {
                     <p> the only thing we need is an extension called New Tab Redirect <pre>[ <a href="https://chrome.google.com/webstore/detail/new-tab-redirect/icpgjfneehieebagbmdbhnlpiopdcmna">click here</a> ]</pre> .  </p>
                     <div className="article__with-img" >
                         <span>1.install "New Tab Redirect" on any browser (recommended: Edge).</span>
-                        <img src={process.env.PUBLIC_URL + 'help1.jpg'}/>
+                        <img alt="help" src={process.env.PUBLIC_URL + 'help1.jpg'}/>
                         <span>2. goto three dot menu and then inside extension , enable "New Tab Redirect" and hit setup options </span>
-                        <img style={{ width: "250px", height: "auto" }}  src={process.env.PUBLIC_URL + 'help2.1.jpg'}/>
-                        <img style={{ width: "250px", height: "auto" }} src={process.env.PUBLIC_URL + 'help2.2.jpg'}/>
+                        <img alt="help" style={{ width: "250px", height: "auto" }}  src={process.env.PUBLIC_URL + 'help2.1.jpg'}/>
+                        <img alt="help" style={{ width: "250px", height: "auto" }} src={process.env.PUBLIC_URL + 'help2.2.jpg'}/>
                         <span>3.paste this url <pre> https://psychic-xo.web.app </pre> on Redirect URL input then hit save and restart browser.</span>
-                        <img style={{ width: "250px", height: "auto" }} src={process.env.PUBLIC_URL + 'help3.jpg'}/>
+                        <img alt="help" style={{ width: "250px", height: "auto" }} src={process.env.PUBLIC_URL + 'help3.jpg'}/>
                         <span>4. That is it. Peace ✌</span>
                     </div>
                    </article>
@@ -64,12 +64,12 @@ function OverviewPage() {
                     <h3># Installation / Setup  Guide [📱  MOBILE 📱]</h3>
                     <p> we need somthing fast and light for mobile, <br /> we recommended "via browser" ( less than 0.5m in size)   <pre>[ <a href="https://play.google.com/store/apps/details?id=mark.via.gp">click here</a> ]</pre> .  </p>
                     <div className="article__with-img" >
-                        <span>1. open "via browser" goto <pre> [ Settings -> General -> Homepage ]</pre> select webpage option.</span>
-                        <img style={{ width: "250px", height: "auto" , borderRadius: "5px" }} src={process.env.PUBLIC_URL + 'mobile1.jpg'}/>
+                        <span>1. open "via browser" goto <pre> {`[ Settings -> General -> Homepage ]`}</pre> select webpage option.</span>
+                        <img alt="help" style={{ width: "250px", height: "auto" , borderRadius: "5px" }} src={process.env.PUBLIC_URL + 'mobile1.jpg'}/>
                     </div>
                     <div className="article__with-img" >
                         <span>2. paste this url <pre> https://psychic-xo.web.app </pre> on custom homepage input then hit OK and restart. </span>
-                        <img style={{ width: "250px", height: "auto" , borderRadius: "5px" }} src={process.env.PUBLIC_URL + 'mobile2.jpg'}/>
+                        <img alt="help" style={{ width: "250px", height: "auto" , borderRadius: "5px" }} src={process.env.PUBLIC_URL + 'mobile2.jpg'}/>
                     </div>
                     <span>3. That is it. Peace ✌</span>
                    </article>
@@ -80,7 +80,7 @@ function OverviewPage() {
                     like. your search bar, downloads bookmarks, and history manager  </p>
                     <div className="article__with-img" >
                         <span>[ if you like to have suggestions you can use your search bar ]</span>
-                        <img src={process.env.PUBLIC_URL + 'suggesstion.png'}/>
+                        <img alt="help" src={process.env.PUBLIC_URL + 'suggesstion.png'}/>
                     </div>
                    </article>
 

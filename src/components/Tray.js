@@ -191,9 +191,11 @@ function Tray() {
                   </a>
                 ))
                 : <div className="bookmark__import">
-                  <p>
-                  oops empty list, create a bookmark <pre>{`[ menu > Actions > Add mark ]`}</pre>, or import some default bookmark's
-                  </p>
+                <div>
+                <p>oops empty list, create a bookmark </p>
+                  <pre>{`[ menu > Actions > Add mark ]`}</pre>
+                  <p>, or import some default bookmark's</p>
+                </div>
                   
                   <a  onClick={importDefaultMarks} className="bookmark__link">
                   <span  >import</span>
